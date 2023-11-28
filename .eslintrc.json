@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "@rocketseat/eslint-config/react"
+    ],
+    "rules": {
+        "no-var": "off",
+        "camelcase": "off",
+        "prefer-const": "off",
+        "react/jsx-key": "off",
+        "spaced-comment": "off",
+        "no-unused-vars": "off",
+        "object-shorthand": "off",
+        "no-useless-return": "off",
+        "prettier/prettier": "off",
+        "react/jsx-no-undef": "off",
+        "no-unneeded-ternary": "off",
+        "no-use-before-define": "off",
+        "no-case-declarations": "off",
+        "import/no-duplicates": "off",
+        "array-callback-return": "off",
+        "n/handle-callback-err": "off",
+        "no-useless-constructor": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "no-unmodified-loop-condition": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "import/no-anonymous-default-export": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-non-null-assertion": "off"
+    }
+}
