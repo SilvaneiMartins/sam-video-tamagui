@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const Favorites = () => {
+const Page = () => {
     return (
         <View>
             <Text>Favoritos</Text>
@@ -9,4 +9,4 @@ const Favorites = () => {
     )
 }
 
-export default Favorites
+export default Page

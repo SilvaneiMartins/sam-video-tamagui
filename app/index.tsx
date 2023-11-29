@@ -1,7 +1,13 @@
-import { Redirect } from "expo-router";
+import React from 'react';
+import { View } from 'react-native';
+import { Redirect } from 'expo-router';
 
 const Page = () => {
-    return <Redirect href={"/(drawer)/home"} />;
-}
+    return (
+        <View>
+            <Redirect href={'/(drawer)/home/'} />
+        </View>
+    );
+};
 
 export default Page;

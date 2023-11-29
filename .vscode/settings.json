@@ -3,6 +3,7 @@
         "camelcase",
         "Ionicons",
         "rocketseat",
-        "tamagui"
+        "tamagui",
+        "tanstack"
     ]
 }
