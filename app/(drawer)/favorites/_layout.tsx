@@ -20,7 +20,7 @@ const Layout = () => {
             <Stack.Screen
                 name="index"
                 options={{
-                    title: 'Meus Favoritos',
+                    title: 'My Favorites',
                     headerLeft: () => <DrawerToggleButton tintColor="#FFF" />,
                 }}
             />
@@ -29,14 +29,14 @@ const Layout = () => {
                 name="movie/[id]"
                 options={{
                     title: '',
-                    headerBackTitle: 'Voltar ',
+                    headerBackTitle: 'Voltar',
                 }}
             />
             <Stack.Screen
                 name="tv/[id]"
                 options={{
                     title: '',
-                    headerBackTitle: 'Voltar ',
+                    headerBackTitle: 'Voltar',
                 }}
             />
         </Stack>

@@ -5,14 +5,9 @@ import DetailsPage from '@/components/DetailsPage';
 import { MediaType } from '@/interfaces/apiResults';
 
 const Page = () => {
-    const { id } = useLocalSearchParams<{ id: string }>();
+  const { id } = useLocalSearchParams<{ id: string }>();
 
-    return (
-        <DetailsPage
-            id={id}
-            mediaType={MediaType.TV}
-        />
-    );
+  return <DetailsPage id={id} mediaType={MediaType.TV} />;
 };
 
 export default Page;

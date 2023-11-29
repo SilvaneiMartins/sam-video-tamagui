@@ -3,7 +3,6 @@
     "name": "sam-movie",
     "slug": "sam-movie",
     "version": "1.0.0",
-
     "scheme": "sam-movie",
     "web": {
       "bundler": "metro",
@@ -15,7 +14,6 @@
       "typedRoutes": true,
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -26,15 +24,14 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.silvaneimartins.sam-movie"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.silvaneimartins.sam-movie"
+      "package": "com.silvanei.sammovie"
     }
   }
 }

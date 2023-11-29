@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'expo-router';
-import Animated from 'react-native-reanimated';
 import { ListItem, ScrollView } from 'tamagui';
+import Animated from 'react-native-reanimated';
 import { useMMKVObject } from 'react-native-mmkv';
 
-import { Favorite } from '@/interfaces/favorites';
 import { Container, Main } from '@/tamagui.config';
+import { Favorite } from '@/interfaces/favorites';
 
 const Page = () => {
     const [favorites, setFavorites] = useMMKVObject<Favorite[]>('favorites');
@@ -15,7 +15,7 @@ const Page = () => {
             <Container>
                 <ScrollView>
                     {favorites?.map((fav) => (
-                        <Link key={fav.id} href={`/(drawer)/favorites/${fav.mediaType}/${fav.id}` as never} asChild>
+                        <Link key={fav.id} href={`/(drawer)/favorites/${fav.mediaType}/${fav.id}`} asChild>
                             <ListItem
                                 theme={'alt2'}
                                 title={fav.name}

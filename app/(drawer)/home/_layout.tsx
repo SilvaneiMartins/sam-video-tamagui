@@ -1,7 +1,10 @@
-import React from 'react'
-import { useTheme } from 'tamagui'
-import { Stack } from 'expo-router'
-import { DrawerToggleButton } from '@react-navigation/drawer'
+import { Stack } from 'expo-router';
+import { useTheme } from 'tamagui';
+import { DrawerToggleButton } from '@react-navigation/drawer';
+
+export const unstable_settings = {
+    initialRouteName: 'index',
+};
 
 const Layout = () => {
     const theme = useTheme();
@@ -12,34 +15,32 @@ const Layout = () => {
                 headerStyle: {
                     backgroundColor: theme.blue7.get(),
                 },
-                headerTintColor: "#FFFFFF",
-            }}
-        >
+                headerTintColor: '#FFF',
+            }}>
             <Stack.Screen
                 name="index"
                 options={{
-                    headerTitle: 'Filmes',
-                    headerLeft: () => <DrawerToggleButton tintColor='#FFFFFF' />,
+                    title: 'Filmes',
+                    headerLeft: () => <DrawerToggleButton tintColor="#FFF" />,
                 }}
             />
 
             <Stack.Screen
                 name="movie/[id]"
                 options={{
-                    headerTitle: '',
-                    headerBackTitle: 'Voltar ',
+                    title: '',
+                    headerBackTitle: 'Voltar',
                 }}
             />
-
             <Stack.Screen
                 name="tv/[id]"
                 options={{
                     title: '',
-                    headerBackTitle: 'Voltar ',
+                    headerBackTitle: 'Voltar',
                 }}
             />
         </Stack>
-    )
-}
+    );
+};
 
-export default Layout
+export default Layout;

@@ -1,14 +1,13 @@
 import Drawer from 'expo-router/drawer';
-import { Platform } from 'react-native';
 import { colorTokens } from '@tamagui/themes';
-import { Home, Star } from 'lucide-react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 const Layout = () => {
     return (
         <Drawer
             screenOptions={{
                 headerShown: true,
-                drawerHideStatusBarOnOpen: Platform.OS === 'android' ? false : true,
+                drawerHideStatusBarOnOpen: true,
                 drawerActiveBackgroundColor: colorTokens.dark.blue.blue7,
                 drawerActiveTintColor: '#fff',
                 drawerLabelStyle: { marginLeft: -20 },
@@ -18,15 +17,17 @@ const Layout = () => {
                 options={{
                     title: 'Filmes',
                     headerShown: false,
-                    drawerIcon: ({ color, size }) => <Home color={color} size={size} />,
+                    drawerIcon: ({ color, size }) => <Ionicons name="ios-home" size={size} color={color} />,
                 }}
             />
             <Drawer.Screen
                 name="favorites"
                 options={{
-                    title: 'Meus Favoritos',
+                    title: 'Meu Favoritos',
                     headerShown: false,
-                    drawerIcon: ({ color, size }) => <Star color={color} size={size} />,
+                    drawerIcon: ({ color, size }) => (
+                        <Ionicons name="star-outline" size={size} color={color} />
+                    ),
                 }}
             />
         </Drawer>

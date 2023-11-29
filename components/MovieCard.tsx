@@ -9,14 +9,14 @@ type MovieCardProps = {
     movie: ResultItem;
 };
 
-export const MovieCard: FunctionComponent<MovieCardProps> = ({ movie }) => {
+const MovieCard: FunctionComponent<MovieCardProps> = ({ movie }) => {
     return (
         <Link
             asChild
             style={{
                 overflow: 'hidden',
             }}
-            href={`/(drawer)/home/${movie.media_type === 'movie' ? 'movie' : 'tv'}/${movie.id}` as never}
+            href={`/(drawer)/home/${movie.media_type === 'movie' ? 'movie' : 'tv'}/${movie.id}`}
         >
             <Card
                 ml={10}
@@ -56,3 +56,5 @@ export const MovieCard: FunctionComponent<MovieCardProps> = ({ movie }) => {
         </Link>
     );
 };
+
+export default MovieCard;
