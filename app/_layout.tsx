@@ -1,5 +1,6 @@
 import { useFonts } from "expo-font";
 import React, { useEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { TamaguiProvider, Theme } from "tamagui";
 import { SplashScreen, Slot } from "expo-router";
 import { QueryClientProvider } from "@tanstack/react-query";
@@ -29,6 +30,7 @@ export default function Layout() {
             <GestureHandlerRootView style={{ flex: 1 }}>
                 <QueryClientProvider client={queryClient}>
                     <Theme name={"blue"}>
+                        <StatusBar style="light" />
                         <Slot />
                     </Theme>
                 </QueryClientProvider>

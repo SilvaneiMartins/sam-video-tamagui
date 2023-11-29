@@ -1,11 +1,11 @@
 export interface TrendingResult {
     page: number;
-    results: Result[];
+    results: ResultItem[];
     total_pages: number;
     total_results: number;
 }
 
-export interface Result {
+export interface ResultItem {
     adult: boolean;
     backdrop_path: string;
     id: number;
@@ -29,5 +29,5 @@ export interface Result {
 
 export enum MediaType {
     Movie = "movie",
-    Tv = "tv",
+    TV = "tv",
 }

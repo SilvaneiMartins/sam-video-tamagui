@@ -27,6 +27,15 @@ const Layout = () => {
                 name="movie/[id]"
                 options={{
                     headerTitle: '',
+                    headerBackTitle: 'Voltar ',
+                }}
+            />
+
+            <Stack.Screen
+                name="tv/[id]"
+                options={{
+                    title: '',
+                    headerBackTitle: 'Voltar ',
                 }}
             />
         </Stack>
