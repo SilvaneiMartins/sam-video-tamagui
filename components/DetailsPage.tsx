@@ -4,11 +4,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { ImageBackground } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { useQuery } from '@tanstack/react-query';
-import { getMovieDetails } from '@/services/api';
 import { useMMKVBoolean, useMMKVObject } from 'react-native-mmkv';
 import { Button, H1, Paragraph, ScrollView, Text, YStack, useTheme } from 'tamagui';
 
 import { Main } from '@/tamagui.config';
+import { getMovieDetails } from '@/services/api';
 import { Favorite } from '@/interfaces/favorites';
 import { MediaType } from '@/interfaces/apiResults';
 
@@ -92,7 +92,7 @@ const DetailsPage = ({ id, mediaType }: DetailsPageProps) => {
                         <Text fontSize={16}>(2023)</Text>
                     </H1>
                     <Paragraph theme={'alt2'}>{movieQuery.data?.tagline}</Paragraph>
-                    <Text fontSize={16}>{movieQuery.data?.overview}</Text>
+                    <Text fontSize={16} textAlign='justify'>{movieQuery.data?.overview}</Text>
                 </YStack>
             </ScrollView>
         </Main>

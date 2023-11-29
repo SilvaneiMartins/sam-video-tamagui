@@ -4,8 +4,8 @@ import { ListItem, ScrollView } from 'tamagui';
 import Animated from 'react-native-reanimated';
 import { useMMKVObject } from 'react-native-mmkv';
 
-import { Container, Main } from '@/tamagui.config';
 import { Favorite } from '@/interfaces/favorites';
+import { Container, Main } from '@/tamagui.config';
 
 const Page = () => {
     const [favorites, setFavorites] = useMMKVObject<Favorite[]>('favorites');

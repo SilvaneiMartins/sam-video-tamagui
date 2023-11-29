@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
 import { ImageBackground } from 'react-native';
-import { useQuery } from '@tanstack/react-query';
+import React, { useState } from 'react';
 import { Input, ScrollView, Spinner, YStack } from 'tamagui';
 import { Container, Title, Main, Subtitle } from '@/tamagui.config';
-
+import { useQuery } from '@tanstack/react-query';
+import { getSearchResuts, getTrending } from '@/services/api';
 import MovieCard from '@/components/MovieCard';
 import useDebounce from '@/utils/useDebounce';
-import { getSearchResuts, getTrending } from '@/services/api';
 
 const Page = () => {
     const [searchString, setSearchString] = useState('');
@@ -39,16 +38,19 @@ const Page = () => {
                                 scale: 1.5,
                                 y: -10,
                             }}
-                            animation={'quick'}>
-                            Trending
+                            animation={'quick'}
+                            fontSize={50}
+                        >
+                            Lançamentos
                         </Title>
                         <Input
-                            placeholder="Procure filme, programa de TV, pessoa..."
-                            placeholderTextColor={'#FFF'}
-                            borderWidth={1}
+                            mt={10}
                             size={'$4'}
+                            borderWidth={1}
                             value={searchString}
+                            placeholderTextColor={'#FFF'}
                             onChangeText={(text) => setSearchString(text)}
+                            placeholder="Procure filme, programa de TV, pessoa..."
                         />
                     </YStack>
                 </Container>
@@ -60,7 +62,7 @@ const Page = () => {
                     opacity: 0,
                 }}
                 animation="lazy">
-                {searchQuery.data?.results ? 'Procurar Resultados:' : 'Tendências:'}
+                {searchQuery.data?.results ? 'Procurar Resultados' : 'Lançamentos'}
             </Subtitle>
 
             {(trendingQuery.isLoading || searchQuery.isLoading) && (
@@ -68,10 +70,10 @@ const Page = () => {
             )}
 
             <ScrollView
+                mr={10}
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                paddingVertical={40}
-                contentContainerStyle={{ gap: 14, paddingLeft: 14 }}>
+            >
                 {searchQuery.data?.results ? (
                     <>{searchQuery.data?.results.map((item) => <MovieCard key={item.id} movie={item} />)}</>
                 ) : (

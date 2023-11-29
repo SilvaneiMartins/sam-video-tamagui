@@ -1,5 +1,5 @@
-import { Stack } from 'expo-router';
 import { useTheme } from 'tamagui';
+import { Stack } from 'expo-router';
 import { DrawerToggleButton } from '@react-navigation/drawer';
 
 export const unstable_settings = {
@@ -20,23 +20,8 @@ const Layout = () => {
             <Stack.Screen
                 name="index"
                 options={{
-                    title: 'Meus Favoritos',
+                    title: 'Perfil do Usuário',
                     headerLeft: () => <DrawerToggleButton tintColor="#FFF" />,
-                }}
-            />
-
-            <Stack.Screen
-                name="movie/[id]"
-                options={{
-                    title: '',
-                    headerBackTitle: 'Voltar',
-                }}
-            />
-            <Stack.Screen
-                name="tv/[id]"
-                options={{
-                    title: '',
-                    headerBackTitle: 'Voltar',
                 }}
             />
         </Stack>
