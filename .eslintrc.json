@@ -4,6 +4,7 @@
     ],
     "rules": {
         "no-var": "off",
+        "no-undef": "off",
         "camelcase": "off",
         "prefer-const": "off",
         "react/jsx-key": "off",
