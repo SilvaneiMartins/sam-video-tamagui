@@ -45,6 +45,6 @@ d. Certifique-se de que o seu código seja legível e comentado quando necessár
 
 ## Código de Conduta
 
-Ao contribuir para este projeto, você concorda em seguir e respeitar nosso [Código de Conduta](https://github.com/seu-usuario/tamagui-movies-expo-app.git/blob/master/CODE_OF_CONDUCT).. Pedimos que todos os contribuidores adotem um comportamento respeitoso e cortês.
+Ao contribuir para este projeto, você concorda em seguir e respeitar nosso [Código de Conduta](https://github.com/seu-usuario/tamagui-movies-expo-app.git/blob/master/CODE_OF_CONDUCT.md).. Pedimos que todos os contribuidores adotem um comportamento respeitoso e cortês.
 
 Obrigado por contribuir para o Tamagui Movies Expo App! Sua colaboração é fundamental para o sucesso deste projeto.

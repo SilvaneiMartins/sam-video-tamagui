@@ -82,7 +82,7 @@ Tamagui Movies Expo App é um aplicativo de filmes que proporciona aos usuários
 
 ## Contribuições
 
-Se você se sentir inspirado, contribuições são mais que bem-vindas! Consulte as diretrizes de contribuição em [CONTRIBUTING.md](https://github.com/seu-usuario/tamagui-movies-expo-app.git/blob/master/CONTRIBUTING).
+Se você se sentir inspirado, contribuições são mais que bem-vindas! Consulte as diretrizes de contribuição em [CONTRIBUTING.md](https://github.com/seu-usuario/tamagui-movies-expo-app.git/blob/master/CONTRIBUTING.md).
 
 ## Licença
 
